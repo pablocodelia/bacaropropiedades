@@ -1,0 +1,20 @@
+# Ignorar archivos binarios
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp3
+*.wav
+*.mp4
+
+static/**
+media/**
+
+
+# Ignorar archivos temporales
+*.pyc
+*.log
+*.tmp
+
+# Ignorar archivos de configuración
+*.env
