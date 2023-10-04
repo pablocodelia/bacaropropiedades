@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+
+
+<div class="container position-flex" style='heigth:200px; position:flex; align-items:center; padding-top:150px; padding-bottom:100px'>    
+    <h2>{{ nombre }}, el formulario se ha enviado correctamente. En poco tiempo nos pondremos en contacto contigo.</h2>
+    <a href='{% url "index" %}' class='btn btn1 py-sm-3 px-sm-5 rounded-pill animated slideInRight' style='position:flex, align-items:center;'>Volver al sitio</a>
+</div>
+{% endblock content %}
