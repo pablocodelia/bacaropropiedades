@@ -130,3 +130,14 @@ STATIC_ROOT = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.bacaropropiedades.cl'
+EMAIL_PORT = 587  # Puerto SMTP. 587 es común para TLS, 465 para SSL
+EMAIL_HOST_USER = 'administrador@bacaropropiedades.cl'  # Tu dirección de correo electrónico
+EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
+EMAIL_USE_TLS = True  # Usar TLS para conexiones seguras (recomendado)
+EMAIL_AUTHENTICATION_METHOD = 'LOGIN'
+EMAIL_DEBUG = True
